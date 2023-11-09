@@ -13,7 +13,7 @@ import com.ecommerce.repository.CategoryRepository;
 public class CategoryImpl implements ICategory{
 	
 	@Autowired
-	public CategoryRepository categoryRepository;
+	private CategoryRepository categoryRepository;
 
 	@Override
 	public List<Category> retrieveCategories() throws CategoryException {
@@ -25,6 +25,15 @@ public class CategoryImpl implements ICategory{
 		}
 		
 		return categories;
+	}
+
+	@Override
+	public Category addCategorie(Category category) throws CategoryException {
+		Category savedCategory = categoryRepository.save(category);
+		if (savedCategory == null) {
+			throw new CategoryException("Category not saved.");
+		}
+		return savedCategory;
 	}
 	
 

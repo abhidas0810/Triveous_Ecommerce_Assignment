@@ -10,5 +10,7 @@ public interface IProduct {
 	public List<Product> retrieveProductByCategoryId(Integer id) throws ProductException;
 
 	public Product retrieveProductById(Integer id) throws ProductException;
+	
+	public Product registerProduct(Product product) throws ProductException;
 
 }

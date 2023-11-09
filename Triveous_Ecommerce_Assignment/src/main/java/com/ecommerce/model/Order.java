@@ -8,10 +8,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
 @Data
+@Table(name = "order_table")
 public class Order {
 	
     @Id
@@ -22,7 +24,7 @@ public class Order {
     @ManyToOne
     private User user;
     
-    @OneToMany(mappedBy = "order")
+    @OneToMany
     private List<OrderItem> orderItems;
     
 }

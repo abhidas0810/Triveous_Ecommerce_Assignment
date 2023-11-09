@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 import lombok.Data;
 
 @Entity
@@ -16,10 +17,13 @@ public class OrderItem {
     private Integer quantity;
     
     @ManyToOne
-    private Product product;
+    private Cart cart;
     
     @ManyToOne
     private Order order;
     
+    @OneToOne
+    private Product product;
+        
 }
 
