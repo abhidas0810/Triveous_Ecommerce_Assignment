@@ -3,7 +3,7 @@
 ##  Entity Relationship
 
 <p align="center">
-  <img src="https://ibb.co/qdJZPV2"/>
+  ![Logo](https://ibb.co/qdJZPV2)
 </p>
 
 ## About
