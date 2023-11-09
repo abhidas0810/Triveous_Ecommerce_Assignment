@@ -8,7 +8,7 @@
 
 ## About
 
-This project is a robust e-commerce API built using Java Spring Boot. It supports essential operations such as product and category listing, cart management, order processing, and user authentication. The API integrates with a chosen database for effective data management. With clear documentation and adherence to coding best practices, this API provides a foundation for building a secure and scalable e-commerce system.
+This project is a robust e-commerce API built using Java Spring Boot. It supports essential operations such as product and category listing, cart management, order processing, and user authentication. The API integrates with the MySql database for effective data management. The API provides a strong foundation for building secure and scalable e-commerce systems. The project encompasses modules for Products, Categories, User Authentication, Cart Management, and Order Processing, making it a versatile solution for online retail needs.
 
 ## Tech Stack
 
