@@ -2,9 +2,9 @@
 
 ##  Entity Relationship
 
-<p align="center">
+
   ![Logo](https://ibb.co/qdJZPV2)
-</p>
+
 
 ## About
 
